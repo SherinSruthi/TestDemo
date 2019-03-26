@@ -1,0 +1,20 @@
+Feature: Login to account
+  		Existing user should be able to login to account using correct credentials
+
+  Scenario: Log into account with correct credentials      # Login.feature:4
+    Given User navigates to Stackoverflow website          # LoginSteps.user_navigates_to_Stackoverflow_website()
+    And User clicks on the login button                    # LoginSteps.user_clicks_on_the_login_button()
+    And User enters the valid username                     # LoginSteps.user_enters_the_valid_username()
+    And User enters the valid password                     # LoginSteps.user_enters_the_valid_password()
+    When User clicks on login button                       # LoginSteps.user_clicks_on_login_button()
+    Then User should be taken to the successful login page # LoginSteps.user_should_be_taken_to_the_successful_login_page()
+Feature: Login to account
+  		Existing user should be able to login to account using correct credentials
+
+  Scenario: Log into account with correct credentials2      # Login2.feature:4
+    Given User navigates to Stackoverflow website2          # LoginSteps.user_navigates_to_Stackoverflow_website(int)
+    And User clicks on the login button2                    # LoginSteps.user_clicks_on_the_login_button(int)
+    And User enters the valid username2                     # LoginSteps.user_enters_the_valid_username(int)
+    And User enters the valid password2                     # LoginSteps.user_enters_the_valid_password(int)
+    When User clicks on login button2                       # LoginSteps.user_clicks_on_login_button(int)
+    Then User should be taken to the successful login page2 # LoginSteps.user_should_be_taken_to_the_successful_login_page(int)
